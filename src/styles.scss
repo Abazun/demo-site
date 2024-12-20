@@ -1,0 +1,23 @@
+@use '@angular/material' as mat;
+
+html {
+  color-scheme: light dark;
+}
+
+body {
+  background: gray !important;
+  color: var(--mat-sys-on-surface);
+}
+
+.link {
+  color: gold;
+  text-decoration: underline;
+
+  &:hover {
+    cursor: pointer;
+    color: goldenrod;
+  }
+}
+
+html, body { height: 100vh; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
