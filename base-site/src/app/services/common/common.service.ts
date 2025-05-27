@@ -8,6 +8,7 @@ import {Router} from "@angular/router";
 export class CommonService {
   isLoading$: Subject<boolean> = new Subject<boolean>();
   protected router: Router = inject(Router);
+  protected domain: string = 'https://www.eizyunga.com/api/';
 
   constructor() { }
 

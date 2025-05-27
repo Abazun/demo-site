@@ -14,7 +14,7 @@ export class FolioService extends CommonService {
   folioData$: Subject<Folio[]> = new Subject<Folio[]>();
   folioForm$: Subject<FormGroup> = new Subject<FormGroup>();
   private folioData: Folio[] = [];
-  private apiUrl: string = 'http://localhost:3000/api/v1/folio';
+  private apiUrl: string = this.domain + 'v1/folio';
   private folioFormData: FormGroup = this.fb.group({
     folioForm: this.fb.array([])
   });

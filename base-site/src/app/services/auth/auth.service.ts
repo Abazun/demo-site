@@ -16,7 +16,7 @@ export class AuthService extends CommonService {
 
   userDetails$: Subject<UserDetails> = new Subject<UserDetails>();
   redirectUrl: string = '';
-  private apiUrl: string = 'http://localhost:3000/api/v1/user';
+  private apiUrl: string = this.domain + 'v1/user';
   private folioPageLink: string = '/folio-demo';
 
   constructor(private http: HttpClient) {
